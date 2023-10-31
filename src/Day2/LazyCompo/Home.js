@@ -1,0 +1,125 @@
+import React from 'react'
+
+function Home(props) {
+  return (
+    <div>
+      <h2>{props.data}</h2>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+      <h1>This is Hom Compo</h1>
+    </div>
+  )
+}
+
+export default Home

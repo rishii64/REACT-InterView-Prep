@@ -7,7 +7,8 @@ import UseReducer from './Day4/UseReducer';
 function App() {
   return (
     <div className="App">
-      < Counter/>
+      <Counter />
+      <parent />
       {/* < APIData/> */}
       {/* <UseEffectCompo /> */}
       {/* <UseReducer /> */}

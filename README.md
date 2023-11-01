@@ -235,3 +235,71 @@ const [count, setCount] = useState(0);
 |useEffect is used for managing side effects within a component. | useContext is used for consuming context data provided by a parent component.|
 |useEffect takes two arguments: a function with side effects and an array of dependencies to control when the effect runs. | useContext takes a single argument, the Context object, and returns the current context value.|
 |useEffect is primarily used for managing asynchronous operations and side effects. | useContext is used for sharing data (such as global state) across components.|
+
+
+## Day - 5
+
+### Q1. High Order Component in react js? 
+- A Higher-Order Component is a function that takes a component and returns a new component with additional props and behavior. In other words, it's a way to wrap a component with some logic to enhance or modify its functionality.
+- Higher-order components (HOCs) are a powerful feature of React that allow you to reuse component logic across multiple components. A HOC is a function that takes a component as an argument and returns a new component that wraps the original component. The new component can add additional functionality to the original component without modifying its code.
+- **Why use HOCs in React?**
+  - HOCs provide a way to reuse component logic and share code between different parts of your application. They help in abstracting complex logic and make components more focused on their main task. 
+  - **Some common use cases for HOCs include:** 
+    - **Code Reuse:** HOCs allow you to extract and reuse common code, such as data fetching or authentication logic, across multiple components.
+    - **Props Manipulation:** You can add, modify, or filter props passed to a component.
+    - **State Management:** HOCs can manage and pass down state to the wrapped components.
+    - **Conditional Rendering:** You can control when and how a component renders based on certain conditions.
+
+### Q2. What are React Life cycles Explain each one with Example?
+- **Mounting:** 
+  - **constructor()**
+    - The constructor is called when an instance of a component is being created and initialized.
+    - It's used to set the initial state to the component.
+  - **Super()**
+    - The super() keyword in React is used to call the constructor of the parent class. This is required when you need to access some variables from the parent class. The reason why this cannot be allowed before super() is because this is uninitialized if super() is not called.
+  - **render()**
+    - The render method returns the JSX to be displayed on the screen.
+    - It must be a pure function, meaning it should not have side effects.
+  - **componentDidMount()**
+    - This method is called after the component is rendered on the screen.
+    - It's often used to perform tasks like making API requests or setting up subscriptions.
+- **Updating**
+  - **componentDidUpdate(prevProps, prevState)**
+    - This method is called after the component is updated.
+    - It's useful for reacting to changes in props or state.
+    - Be careful not to create infinite loops by updating state within this method.
+- **Unmounting**
+  - **componentWillUnmount()**
+    - This method is called just before the component is removed from the DOM.
+    - It's used to clean up resources like subscriptions and timers.
+
+- **this** 
+  - The this keyword in React refers to the current instance of a component class. It allows you to access the component's props, state, and methods within its class definition.
+
+### Q3. What is memory leak and how to overcome?
+- A memory leak is a type of resource leak that occurs when a computer program incorrectly manages memory allocations in a way that memory that is no longer needed is not released. This can lead to performance issues, as the application's memory footprint continuously increases over time.
+- **Causes of memory leaks in React**
+  - **Event listeners:** If you attach event listeners to elements within your React components, but fail to remove them when the component unmounts, it can lead to memory leaks. This is because the event listeners will continue to hold a reference to the component, preventing it from being garbage collected.
+  - **Subscription-based APIs:** If you're using subscription-based APIs, such as WebSocket connections or observables, it's crucial to unsubscribe or close these subscriptions when they're no longer needed. Otherwise, the subscriptions will continue to hold a reference to the component, preventing it from being garbage collected.
+  - **Closures:** Closures can also lead to memory leaks if they are not properly managed. For example, if you create a closure that contains a reference to a component, and then that closure is stored outside of the component's lifecycle, the component will not be able to be garbage collected.
+- **How to overcome memory leaks in React**
+  - **Always remove event listeners when components unmount:** You can do this in the componentWillUnmount lifecycle method for class components, or in the cleanup function returned by the useEffect hook for function components.
+  - **Always unsubscribe from subscription-based APIs when they're no longer needed:** You can do this by calling the unsubscribe() method on the subscription object.
+  - **Be careful with closures:** Make sure that closures that contain references to components are only stored within the component's lifecycle.
+
+- some additional tips for preventing memory leaks in react.
+  - Use the useEffect hook to manage cleanup logic.
+  - Use React.createRef() to create refs to DOM elements and other objects.
+  - Use the React.memo() function to memoize components, which can help to avoid re-rendering components that don't need to be re-rendered.
+  - Use a memory profiling tool to identify and fix memory leaks.
+
+### Q4. Do you know about redux?
+- Redux is a state management library often used with React, although it can be used with other JavaScript frameworks or libraries as well. It helps you manage the state of your application in a predictable and centralized way. I'll provide you with detailed notes and runnable examples to help you understand Redux better.
+- Redux stores the state of your application in a single object tree. The state tree is immutable, meaning that it cannot be changed directly. Instead, changes to the state tree are made by dispatching actions. Actions are plain JavaScript objects that describe what happened in your application.
+- When an action is dispatched, a reducer function is called to calculate the new state of the application. Reducer functions are pure functions, meaning that they always return the same output for the same input. This ensures that the state tree is always consistent.
+
+- **Redux Basics**
+  - **Store:** The store holds the current state of your application. You can think of it as a JavaScript object that contains all the data you need for your app.
+  - **Actions:** Actions are plain JavaScript objects that describe the type of change you want to make to your state. For example, you might have an action like ADD_TODO to add a new to-do item.
+  - **Reducers:** Reducers are pure functions that specify how the application's state changes in response to actions. They take the current state and an action as parameters and return the new state.
+  - **Dispatch:** To update the state, you dispatch actions to the store using store.dispatch(action). This triggers a state change.
